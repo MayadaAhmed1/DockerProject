@@ -37,6 +37,17 @@ We target to dockerize BOTH apps - the Python and the Node app and apply below a
 
  🎯 **Steps**
 
+| Questions   | First image   | Second image  |
+|------------|------------|------------|
+| Q1         | Data 2     | Data 3     |
+| Q2         | Data 5     | Data 6     |
+| Q3         | Data 5     | Data 6     |
+| Q4         | Data 5     | Data 6     |
+| Q5         | Data 5     | Data 6     |
+| Q6         | Data 5     | Data 6     |
+
+
+
  |  | First image | Second image  |
 | --- | --- | --- |
 | Q1 | `cd node-app`/
