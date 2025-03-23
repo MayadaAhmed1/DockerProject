@@ -36,3 +36,32 @@ We target to dockerize BOTH apps - the Python and the Node app and apply below a
 
 
  🎯 **Steps**
+
+ |  | First image | Second image  |
+| --- | --- | --- |
+| Q1 | `cd node-app`/
+`docker build .` | `cd python-app/`
+`docker build .` |
+| Q2 | `docker images`
+`docker run -p 8000:3000 image_ID` | `docker images
+docker run -it image_ID` |
+| Q3 | `docker run  -p 8000:3000 --name containerName image_ID
+
+docker stop containerName
+docker start containerName` | `docker run -it --name containerName image_ID
+
+docker stop containerName
+docker start containerName` |
+| Q4 | **clean containers :** 
+docker ps -a
+docker rm container_name1 container_name2
+
+**clean images:**
+docker images
+docker rmi image_name1 image_name2
+
+docker image prune |  |
+| Q5 | `cd node-app`/
+`docker build -t node-demo:latest .` | `cd python-app/`
+`docker build -t python-demo:1 .` |
+| Q6 | `docker run -p 8000:3000  -d -—name nodeapp -—rm node-demo` | `docker run -it -—name pythonnode -—rm python-demo:1` |
