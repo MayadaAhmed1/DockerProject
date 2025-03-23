@@ -40,7 +40,7 @@ We target to dockerize BOTH apps - the Python and the Node app and apply below a
 | Questions   | First image                  | Second image  |
 |------------|-------------------------------|------------|
 | Q1         |cd node-app/ <br>docker build .    | cd python-app/ <br>docker build .   |
-| Q2         | Data 5     | Data 6     |
+| Q2         | docker run  -p 8000:3000 --name containerName image_ID<br>docker stop containerName<br>docker start containerName    | docker run -it --name containerName image_ID<br>docker stop containerName<br>docker start containerName     |
 | Q3         | Data 5     | Data 6     |
 | Q4         | Data 5     | Data 6     |
 | Q5         | Data 5     | Data 6     |
